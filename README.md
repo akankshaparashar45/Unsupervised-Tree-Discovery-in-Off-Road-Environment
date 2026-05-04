@@ -28,7 +28,7 @@ asdf
 # References
 - [Localizing Objects with Self-Supervised Transformers and no Labels (Siméoni et al., 2021)](https://arxiv.org/abs/2109.14279)
 - [Self-Supervised Transformers for Unsupervised Object Discovery using Normalized Cut (Wang et al., 2022)](https://arxiv.org/abs/2202.11539)
-- [MOST: Multiple Object Localization with Self-supervised Transformers for Object Discovery (Rambhatla et al., 2023)](https://arxiv.org/abs/2303.09850)
+- [MOST: Multiple Object Localization with Self-supervised Transformers for Object Discovery (Rambhatla et al., 2023)](https://arxiv.org/abs/2304.05387)
 - [Cut and Learn for Unsupervised Object Detection and Instance Segmentation (Wang et al., 2023)](https://arxiv.org/abs/2301.11320)
 - [FeatUp: A Model-Agnostic Framework for Features at Any Resolution (Fu et al., 2024)](https://arxiv.org/abs/2403.10516)
-- [CuVLER: Enhanced Unsupervised Object Discoveries through Exhaustive Self-Supervised Transformers (Arica et al., 2024)](https://arxiv.org/abs/2403.12345)
+- [CuVLER: Enhanced Unsupervised Object Discoveries through Exhaustive Self-Supervised Transformers (Arica et al., 2024)](https://arxiv.org/abs/2403.07700v1)
