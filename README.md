@@ -5,7 +5,16 @@ Unsupervised object discovery in off-road environments is challenging due to clu
 # Problem Statement
 In off-road environments, the background often dominates the image, making it difficult to distinguish and localize target objects such as tree trunks. Existing self-supervised object discovery methods struggle in such scenarios due to occlusions, overlapping structures, and complex natural clutter. Additionally, the lack of diverse annotated off-road datasets under varying conditions limits the effectiveness of supervised approaches. This research addresses these challenges using unsupervised and weakly supervised techniques, supported by synthetic data generation. It also emphasizes domain generalization to ensure robustness when transferring from simulated training data to real-world environments.
 # Proposed Approach
-asdf
+This work proposes an unsupervised pipeline for object discovery in complex off-road environments using transformer-based features, feature upsampling, and depth integration.
+
+- Use **DINO-pretrained Vision Transformer (ViT)** to extract semantic features  
+- Apply **attention transfer with bounding-box guidance** to focus on the region of interest  
+- Use **FeatUp** to upsample features and recover fine spatial details  
+- Construct an **affinity matrix** and apply **MaskCut** for foreground-background partitioning  
+- Integrate **depth information** to improve separation in visually similar regions  
+- Generate **pseudo-masks** for object localization and downstream tasks  
+
+**Key Idea:** Combine semantic features, spatial refinement, and geometric cues to improve unsupervised object discovery in cluttered off-road scenes.
 # Methodology
 asdf
 # Repository Structure
