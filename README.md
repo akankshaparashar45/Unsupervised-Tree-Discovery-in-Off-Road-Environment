@@ -72,7 +72,20 @@ asdf
 # Usage
 asdf
 # Experiments
-asdf
+
+### Baseline Comparison
+
+### Model Selection
+
+### Zero-Shot Domain Transfer
+
+### Performance on BBox
+
+### FeatUp Performance
+
+### Depth Integrated MaskCut
+
+
 # Results
 -- Quatitative Results
 -- Quantiitative Results
