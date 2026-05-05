@@ -128,12 +128,12 @@ This section evaluates different configurations of the proposed pipeline to anal
  
 <p align="center">
   <img src="images/LOST_and_MOST.png" width="700"><br>
-  <em>Pipeline: LOST and MOST</em>
+  <em>Discovery Methods: LOST and MOST</em>
 </p>
 
 <p align="center">
   <img src="images/CutLER.png" width="45%">
-  <img src="images/CuVLER.png" width="45%"><br>
+  <img src="images/CuVLER.png" width="30%"><br>
   <em>Left: CutLER | Right: CuVLER</em>
 </p>
 ### 🔹 Model Selection
