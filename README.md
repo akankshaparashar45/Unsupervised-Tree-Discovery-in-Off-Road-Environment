@@ -70,7 +70,20 @@ asdf
 -- Quatitative Results
 -- Quantiitative Results
 # Evaluation Metrics
-asdf
+
+### 🔹 Performance Metrics
+- **IoU (Intersection over Union):** Measures overlap between predicted and ground truth masks  
+- **Dice Score:** Evaluates similarity between predicted and actual regions  
+- **Precision:** Correctly predicted foreground pixels out of all predicted foreground  
+- **Recall:** Correctly detected foreground pixels out of actual foreground  
+- **Accuracy:** Overall pixel-wise correctness  
+- **Boundary IoU:** Measures alignment of predicted and true object boundaries  
+- **Over-segmentation (OverSeg):** Extra predicted region beyond ground truth  
+- **Under-segmentation (UnderSeg):** Missed regions of the actual object  
+
+### 🔹 Loss Metrics
+- **Binary Cross-Entropy (BCE):** Pixel-wise prediction error  
+- **Dice Loss:** Measures dissimilarity between predicted and ground truth masks  
 # Limitations
 asdf
 # Future Work
