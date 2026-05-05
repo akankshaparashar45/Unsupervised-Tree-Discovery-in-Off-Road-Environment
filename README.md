@@ -16,7 +16,43 @@ This work proposes an unsupervised pipeline for object discovery in complex off-
 
 **Key Idea:** Combine semantic features, spatial refinement, and geometric cues to improve unsupervised object discovery in cluttered off-road scenes.
 # Methodology
-asdf
+The proposed method follows a multi-stage pipeline combining transformer-based features, graph-based segmentation, and depth cues for unsupervised object discovery.
+
+### 1. Feature Extraction (DINO ViT)
+- Use a **DINO-pretrained Vision Transformer** to extract patch-level features  
+- Images are resized to a fixed resolution (e.g., 480×480)  
+- Features capture semantic information but have low spatial resolution  
+
+### 2. ROI Guidance (Attention Transfer)
+- Apply **bounding-box-based weak supervision**  
+- Guide the model to focus on the **target region (tree trunk)**  
+- Reduce background dominance in feature representation  
+
+### 3. Feature Upsampling (FeatUp)
+- Use **FeatUp** to convert patch-level features into dense pixel-level features  
+- Improves spatial continuity and localization  
+- May introduce slight smoothing at object boundaries  
+
+### 4. Graph Construction
+- Construct an **affinity matrix** using cosine similarity between feature vectors  
+- Apply threshold (τ) to retain strong feature relationships  
+- Form a graph where nodes represent patches/pixels  
+
+### 5. MaskCut Segmentation
+- Compute the **second smallest eigenvector** of the normalized graph Laplacian  
+- Perform bipartition to separate **foreground and background**  
+- Extract connected components to obtain object masks  
+
+### 6. Depth Integration
+- Incorporate **depth information** to refine segmentation  
+- Improve separation in regions with similar RGB appearance  
+- Use depth similarity constraints to control mask spread  
+
+### 7. Pseudo-Mask Generation
+- Generate object masks from segmentation output  
+- Refine masks using post-processing (if applicable)  
+- Use pseudo-masks for evaluation and downstream tasks  
+
 # Repository Structure
 asdf
 # Installation
