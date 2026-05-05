@@ -18,6 +18,11 @@ This work proposes an unsupervised pipeline for object discovery in complex off-
 # Methodology
 The proposed method follows a multi-stage pipeline combining transformer-based features, graph-based segmentation, and depth cues for unsupervised object discovery.
 
+<p align="center">
+  <img src="images/methodology.png" width="700"><br>
+  <em>Pipeline: ViT → FeatUp → MaskCut → Depth</em>
+</p>
+
 ### 1. Feature Extraction (DINO ViT)
 - Use a **DINO-pretrained Vision Transformer** to extract patch-level features  
 - Images are resized to a fixed resolution (e.g., 480×480)  
