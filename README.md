@@ -124,8 +124,8 @@ asdf
 This section evaluates different configurations of the proposed pipeline to analyze their effectiveness in off-road object discovery.
 
 ### 🔹 Baseline Comparison
-- Evaluate existing methods (e.g., MaskCut, CutLER) as baselines  
-- Compare performance with the proposed modifications  
+- Evaluate existing methods (e.g., LOST, MOST, TokenCut, MaskCut, CutLER) as baselines  
+ 
 
 ### 🔹 Model Selection
 - Analyze different ViT configurations (architecture, patch size, features)  
