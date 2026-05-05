@@ -73,18 +73,31 @@ asdf
 asdf
 # Experiments
 
-### Baseline Comparison
+This section evaluates different configurations of the proposed pipeline to analyze their effectiveness in off-road object discovery.
 
-### Model Selection
+### 🔹 Baseline Comparison
+- Evaluate existing methods (e.g., MaskCut, CutLER) as baselines  
+- Compare performance with the proposed modifications  
 
-### Zero-Shot Domain Transfer
+### 🔹 Model Selection
+- Analyze different ViT configurations (architecture, patch size, features)  
+- Select the best-performing setup for further experiments  
 
-### Performance on BBox
+### 🔹 Zero-Shot Domain Transfer
+- Train on simulated data and test on real-world off-road images  
+- Evaluate the model’s ability to generalize without retraining  
 
-### FeatUp Performance
+### 🔹 Performance on Bounding Boxes
+- Apply weak supervision using bounding boxes  
+- Study how ROI guidance improves localization and reduces background noise  
 
-### Depth Integrated MaskCut
+### 🔹 FeatUp Performance
+- Evaluate the impact of feature upsampling on spatial resolution  
+- Compare results before and after applying FeatUp  
 
+### 🔹 Depth-Integrated MaskCut
+- Incorporate depth information into the segmentation process  
+- Analyze improvements in foreground-background separation 
 
 # Results
 -- Quatitative Results
