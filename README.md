@@ -132,8 +132,8 @@ This section evaluates different configurations of the proposed pipeline to anal
 </p>
 
 <p align="center">
-  <img src="images/CutLER.png" width="45%" height="300">
-  <img src="images/CuVLER.png" width="45%" height="300"><br>
+  <img src="images/CutLER.png" width="400" height="300">
+  <img src="images/CuVLER.png" width="400" height="300"><br>
   <em>Recent Methodologies: Left - CutLER and Right - CuVLER</em>
 </p>
 ### 🔹 Model Selection
