@@ -132,7 +132,7 @@ This section evaluates different configurations of the proposed pipeline to anal
 </p>
 
 <p align="center">
-  <img src="images/CutLER_and_CuVLER.png" width="45%"><br>
+  <img src="images/CutLER_and_CuVLER.png" width="700"><br>
   <em>Recent Methodologies: Left - CutLER and Right - CuVLER</em>
 </p>
 
