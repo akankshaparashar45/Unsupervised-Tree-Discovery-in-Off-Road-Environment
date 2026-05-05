@@ -66,7 +66,54 @@ The proposed method follows a multi-stage pipeline combining transformer-based f
 - Use pseudo-masks for evaluation and downstream tasks  
 
 # Repository Structure
-asdf
+
+repo/
+│
+├── README.md
+├── requirements.txt
+├── environment.yml (optional)
+│
+├── data/
+│   ├── sample/              # small demo data (never full dataset)
+│   └── README.md            # how to get full dataset
+│
+├── notebooks/               # exploratory work (cleaned versions only)
+│   ├── baseline_maskcut.ipynb
+│   ├── featup_analysis.ipynb
+│   └── depth_integration.ipynb
+│
+├── src/                     # main code (very important ⭐)
+│   ├── feature_extraction/
+│   ├── maskcut/
+│   ├── featup/
+│   ├── depth/
+│   └── utils/
+│
+├── scripts/                 # runnable scripts
+│   ├── run_baseline.py
+│   ├── run_featup.py
+│   ├── run_depth.py
+│   └── evaluate.py
+│
+├── experiments/             # experiment configs (not raw clutter)
+│   ├── baseline/
+│   ├── featup/
+│   └── depth/
+│
+├── outputs/                 # results (organized)
+│   ├── baseline/
+│   ├── featup/
+│   ├── depth/
+│   └── comparisons/
+│
+├── images/                  # for README (important)
+│   ├── pipeline.png
+│   ├── results.png
+│   └── comparisons.png
+│
+└── docs/                    # optional
+    └── report.pdf
+    
 # Installation
 asdf
 # Usage
