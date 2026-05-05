@@ -105,8 +105,13 @@ asdf
 - **Depth Limitations:** Depth alone is insufficient for precise segmentation, especially at patch-level resolution
   
 # Future Work
-asdf
+
+- **Efficient Upsampling:** Explore faster alternatives such as Joint Bilateral Upsampling (JBU) to reduce computation time and avoid per-image training  
+- **Advanced Graph Partitioning:** Replace binary foreground–background segmentation with clustering-based approaches for multi-object discovery  
+- **Multi-Resolution Features:** Combine local and global cues to improve mask precision and capture fine details
+
 # References
+
 - [Localizing Objects with Self-Supervised Transformers and no Labels (Siméoni et al., 2021)](https://arxiv.org/abs/2109.14279)
 - [Self-Supervised Transformers for Unsupervised Object Discovery using Normalized Cut (Wang et al., 2022)](https://arxiv.org/abs/2202.11539)
 - [MOST: Multiple Object Localization with Self-supervised Transformers for Object Discovery (Rambhatla et al., 2023)](https://arxiv.org/abs/2304.05387)
