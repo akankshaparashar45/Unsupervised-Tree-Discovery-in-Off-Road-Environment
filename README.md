@@ -20,7 +20,7 @@ The proposed method follows a multi-stage pipeline combining transformer-based f
 
 <p align="center">
   <img src="images/methodology.png" width="700"><br>
-  <em>Pipeline: ViT → FeatUp → MaskCut → Depth</em>
+  <em>Pipeline: ViT → FeatUp → Depth → MaskCut</em>
 </p>
 
 ### 1. Feature Extraction (DINO ViT)
@@ -36,22 +36,22 @@ The proposed method follows a multi-stage pipeline combining transformer-based f
 ### 3. Feature Upsampling (FeatUp)
 - Use **FeatUp** to convert patch-level features into dense pixel-level features  
 - Improves spatial continuity and localization  
-- May introduce slight smoothing at object boundaries  
+- May introduce slight smoothing at object boundaries
 
-### 4. Graph Construction
+### 4. Depth Integration
+- Incorporate **depth information** to refine segmentation  
+- Improve separation in regions with similar RGB appearance  
+- Use depth similarity constraints to control mask spread 
+
+### 5. Graph Construction
 - Construct an **affinity matrix** using cosine similarity between feature vectors  
 - Apply threshold (τ) to retain strong feature relationships  
 - Form a graph where nodes represent patches/pixels  
 
-### 5. MaskCut Segmentation
+### 6. MaskCut Segmentation
 - Compute the **second smallest eigenvector** of the normalized graph Laplacian  
 - Perform bipartition to separate **foreground and background**  
 - Extract connected components to obtain object masks  
-
-### 6. Depth Integration
-- Incorporate **depth information** to refine segmentation  
-- Improve separation in regions with similar RGB appearance  
-- Use depth similarity constraints to control mask spread  
 
 ### 7. Pseudo-Mask Generation
 - Generate object masks from segmentation output  
