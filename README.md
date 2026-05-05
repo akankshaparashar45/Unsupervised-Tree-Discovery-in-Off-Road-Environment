@@ -66,7 +66,7 @@ The proposed method follows a multi-stage pipeline combining transformer-based f
 - Use pseudo-masks for evaluation and downstream tasks  
 
 # Repository Structure
-
+```bash
 repo/
 │
 ├── README.md
