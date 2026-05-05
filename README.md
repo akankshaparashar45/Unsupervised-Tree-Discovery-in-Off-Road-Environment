@@ -132,9 +132,9 @@ This section evaluates different configurations of the proposed pipeline to anal
 </p>
 
 <p align="center">
-  <img src="images/CutLER.png" width="45%">
-  <img src="images/CuVLER.png" width="30%"><br>
-  <em>Left: CutLER | Right: CuVLER</em>
+  <img src="images/CutLER.png" width="45%" height="300">
+  <img src="images/CuVLER.png" width="45%" height="300"><br>
+  <em>Recent Methodologies: Left - CutLER and Right - CuVLER</em>
 </p>
 ### 🔹 Model Selection
 - Analyze different ViT configurations (architecture, patch size, features)  
