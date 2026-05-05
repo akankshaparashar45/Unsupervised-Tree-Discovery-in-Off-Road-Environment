@@ -135,6 +135,9 @@ This section evaluates different configurations of the proposed pipeline to anal
   <img src="images/CutLER_and_CuVLER.png" width="45%" height="300"><br>
   <em>Recent Methodologies: Left - CutLER and Right - CuVLER</em>
 </p>
+
+Conclusion: CutLER is chosen as the foundational model, as it demonstrates superior performance in detecting and localizing tree structures in complex off-road environments.
+
 ### 🔹 Model Selection
 - Analyze different ViT configurations (architecture, patch size, features)  
 - Select the best-performing setup for further experiments  
