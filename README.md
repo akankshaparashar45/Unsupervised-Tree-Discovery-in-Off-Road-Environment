@@ -144,19 +144,39 @@ This section evaluates different configurations of the proposed pipeline to anal
 
 ### 🔹 Zero-Shot Domain Transfer
 - Train on simulated data and test on real-world off-road images  
-- Evaluate the model’s ability to generalize without retraining  
+- Evaluate the model’s ability to generalize without retraining
+
+<p align="center">
+  <img src="images/zero_shot_domain_transfer.png" width="700"><br>
+  <em>Zero-Shot Domain Transfer</em>
+</p>
 
 ### 🔹 Performance on Bounding Boxes
 - Apply weak supervision using bounding boxes  
-- Study how ROI guidance improves localization and reduces background noise  
+- Study how ROI guidance improves localization and reduces background noise
+
+<p align="center">
+  <img src="images/performance_on_bbox.png" width="700"><br>
+  <em>Performance on a Bounding Box</em>
+</p>
 
 ### 🔹 FeatUp Performance
 - Evaluate the impact of feature upsampling on spatial resolution  
-- Compare results before and after applying FeatUp  
+- Compare results before and after applying FeatUp
+
+<p align="center">
+  <img src="images/FeatUp_performance.png" width="700"><br>
+  <em>abdc</em>
+</p>
 
 ### 🔹 Depth-Integrated MaskCut
 - Incorporate depth information into the segmentation process  
-- Analyze improvements in foreground-background separation 
+- Analyze improvements in foreground-background separation
+
+<p align="center">
+  <img src="images/performance_of_proposed_pipeline.png" width="700"><br>
+  <em>Zero-Shot Domain Transfer</em>
+</p>
 
 # Results
 -- Quatitative Results
