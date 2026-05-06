@@ -21,6 +21,24 @@ This work proposes an unsupervised pipeline for object discovery in complex off-
 
 **Key Idea:** Combine semantic features, spatial refinement, and geometric cues to improve unsupervised object discovery in cluttered off-road scenes.
 
+# Related Work
+
+### CutLER: Reference Model
+
+CutLER iteratively improves localization by training a detector on MaskCut pseudo-masks and using its predictions as refined pseudo labels.
+
+<p align="center">
+  <img src="images/CutLER_Pipeline.png" width="700"><br>
+  <em>CutLER Pipeline</em>
+</p>
+
+MaskCut identifies object regions through iterative segmentation and produces pseudo ground truth masks for downstream tasks.
+
+<p align="center">
+  <img src="images/MaskCut.png" width="700"><br>
+  <em>MaskCut</em>
+</p>
+
 # Methodology
 
 The proposed method follows a multi-stage pipeline combining transformer-based features, graph-based segmentation, and depth cues for unsupervised object discovery.
@@ -171,7 +189,7 @@ This section evaluates different configurations of the proposed pipeline to anal
 
 <p align="center">
   <img src="images/FeatUp_performance.png" width="700"><br>
-  <em>Results before and after applying FeatUp</em>
+  <em>Result on BBox (left) before (middle) and after (right) applying FeatUp</em>
 </p>
 
 ***Conclusion:*** FeatUp produces dense pixel-level representations that preserve thin structures and edges, resulting in continuous bark regions with strong foreground dominance.
@@ -182,7 +200,7 @@ This section evaluates different configurations of the proposed pipeline to anal
 
 <p align="center">
   <img src="images/performance_of_proposed_pipeline.png" width="700"><br>
-  <em>Zero-Shot Domain Transfer</em>
+  <em>Performance of Proposed Pipeline</em>
 </p>
 
 ***Conclusion:*** Incorporating depth with FeatUp-based features refines MaskCut segmentation by limiting cross-region similarity, leading to better foreground isolation.
@@ -195,7 +213,7 @@ The experimental results demonstrate the effectiveness of the proposed modificat
 - **CutLER (Baseline Selection):** Shows relatively better performance in localizing tree structures compared to other methods, and is selected as the base model  
 - **Bounding Box Guidance:** Reduces irrelevant background regions and improves focus on the target object  
 - **FeatUp (Feature Upsampling):** Enhances spatial continuity and produces denser representations, leading to improved mask coverage  
-- **Depth Integration:** Improves foreground-background separation, especially in regions with similar color and texture
+- **Depth Integration:** Improves foreground–background separation; however, it provides limited improvement over FeatUp, with only marginal gains in segmentation performance.
 
 ### 🔹 Qualitative Results
 - More accurate localization of tree bark in cluttered scenes  
@@ -203,7 +221,7 @@ The experimental results demonstrate the effectiveness of the proposed modificat
 - Challenges remain in cases of heavy occlusion and overlapping objects
 
 <p align="center">
-  <img src="images/Qualitative_Result.png" width="700"><br>
+  <img src="images/Qualitative_Result.png" width="400"><br>
   <em>Qualitative Result</em>
 </p>  
 
@@ -213,7 +231,7 @@ The experimental results demonstrate the effectiveness of the proposed modificat
 - Slight trade-off in **boundary sharpness**, with masks appearing smoother  
 
 <p align="center">
-  <img src="images/Quantitative_Result.png" width="700"><br>
+  <img src="images/Quantitative_Result.png" width="400"><br>
   <em>Qualitative Result</em>
 </p>
   
