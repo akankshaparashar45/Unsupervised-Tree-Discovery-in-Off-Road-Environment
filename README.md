@@ -185,7 +185,7 @@ This section evaluates different configurations of the proposed pipeline to anal
   <em>Zero-Shot Domain Transfer</em>
 </p>
 
-***Conclusion:*** 
+***Conclusion:*** Incorporating depth with FeatUp-based features refines MaskCut segmentation by limiting cross-region similarity, leading to better foreground isolation.
 
 # Results
 
@@ -195,17 +195,27 @@ The experimental results demonstrate the effectiveness of the proposed modificat
 - **CutLER (Baseline Selection):** Shows relatively better performance in localizing tree structures compared to other methods, and is selected as the base model  
 - **Bounding Box Guidance:** Reduces irrelevant background regions and improves focus on the target object  
 - **FeatUp (Feature Upsampling):** Enhances spatial continuity and produces denser representations, leading to improved mask coverage  
-- **Depth Integration:** Improves foreground-background separation, especially in regions with similar color and texture  
+- **Depth Integration:** Improves foreground-background separation, especially in regions with similar color and texture
+
+### 🔹 Qualitative Results
+- More accurate localization of tree bark in cluttered scenes  
+- Improved segmentation in partially visible regions  
+- Challenges remain in cases of heavy occlusion and overlapping objects
+
+<p align="center">
+  <img src="images/Qualitative_Result.png" width="700"><br>
+  <em>Qualitative Result</em>
+</p>  
 
 ### 🔹 Quantitative Insights
 - Improved **IoU and Dice scores** observed with FeatUp and depth integration  
 - Better **precision and recall** due to reduced background noise  
 - Slight trade-off in **boundary sharpness**, with masks appearing smoother  
 
-### 🔹 Qualitative Results
-- More accurate localization of tree bark in cluttered scenes  
-- Improved segmentation in partially visible regions  
-- Challenges remain in cases of heavy occlusion and overlapping objects
+<p align="center">
+  <img src="images/Quantitative_Result.png" width="700"><br>
+  <em>Qualitative Result</em>
+</p>
   
 # Evaluation Metrics
 
