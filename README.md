@@ -124,7 +124,7 @@ asdf
 This section evaluates different configurations of the proposed pipeline to analyze their effectiveness in off-road object discovery.
 
 ### 🔹 Baseline Comparison
-- Evaluate existing methods (e.g., LOST, MOST, TokenCut, MaskCut, CutLER) as baselines  
+- Evaluate existing methods (e.g., LOST, MOST, MaskCut, CutLER) as baselines  
  
 <p align="center">
   <img src="images/LOST_and_MOST.png" width="700"><br>
@@ -140,7 +140,9 @@ This section evaluates different configurations of the proposed pipeline to anal
 
 ### 🔹 Model Selection
 - Analyze different ViT configurations (architecture, patch size, features)  
-- Select the best-performing setup for further experiments  
+- Select the best-performing setup for further experiments
+
+***Conclusion:*** The ViT-Base model is selected for its rich feature representation, while a patch size of 8 is chosen to effectively capture both global context and fine-grained local details.
 
 ### 🔹 Zero-Shot Domain Transfer
 - Train on simulated data and test on real-world off-road images  
@@ -151,6 +153,8 @@ This section evaluates different configurations of the proposed pipeline to anal
   <em>Zero-Shot Domain Transfer</em>
 </p>
 
+***Conclusion:*** Scattered features, thin bark structures, and limited spatial dominance lead to poor foreground separation, causing the bark to diffuse into the background.
+
 ### 🔹 Performance on Bounding Boxes
 - Apply weak supervision using bounding boxes  
 - Study how ROI guidance improves localization and reduces background noise
@@ -160,6 +164,8 @@ This section evaluates different configurations of the proposed pipeline to anal
   <em>Performance on a Bounding Box</em>
 </p>
 
+***Conclusion:*** Bounding-box-based localization results in coarse, blocky masks with poor alignment to tree bark edges, leading to inaccurate localization.
+
 ### 🔹 FeatUp Performance
 - Evaluate the impact of feature upsampling on spatial resolution 
 
@@ -167,6 +173,8 @@ This section evaluates different configurations of the proposed pipeline to anal
   <img src="images/FeatUp_performance.png" width="700"><br>
   <em>Results before and after applying FeatUp</em>
 </p>
+
+***Conclusion:*** FeatUp produces dense pixel-level representations that preserve thin structures and edges, resulting in continuous bark regions with strong foreground dominance.
 
 ### 🔹 Depth-Integrated MaskCut
 - Incorporate depth information into the segmentation process  
@@ -177,9 +185,28 @@ This section evaluates different configurations of the proposed pipeline to anal
   <em>Zero-Shot Domain Transfer</em>
 </p>
 
+***Conclusion:*** 
+
 # Results
--- Quatitative Results
--- Quantiitative Results
+
+The experimental results demonstrate the effectiveness of the proposed modifications over the baseline MaskCut approach in challenging off-road environments.
+
+### 🔹 Key Observations
+- **CutLER (Baseline Selection):** Shows relatively better performance in localizing tree structures compared to other methods, and is selected as the base model  
+- **Bounding Box Guidance:** Reduces irrelevant background regions and improves focus on the target object  
+- **FeatUp (Feature Upsampling):** Enhances spatial continuity and produces denser representations, leading to improved mask coverage  
+- **Depth Integration:** Improves foreground-background separation, especially in regions with similar color and texture  
+
+### 🔹 Quantitative Insights
+- Improved **IoU and Dice scores** observed with FeatUp and depth integration  
+- Better **precision and recall** due to reduced background noise  
+- Slight trade-off in **boundary sharpness**, with masks appearing smoother  
+
+### 🔹 Qualitative Results
+- More accurate localization of tree bark in cluttered scenes  
+- Improved segmentation in partially visible regions  
+- Challenges remain in cases of heavy occlusion and overlapping objects
+  
 # Evaluation Metrics
 
 ### 🔹 Performance Metrics
