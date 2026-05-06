@@ -161,12 +161,11 @@ This section evaluates different configurations of the proposed pipeline to anal
 </p>
 
 ### 🔹 FeatUp Performance
-- Evaluate the impact of feature upsampling on spatial resolution  
-- Compare results before and after applying FeatUp
+- Evaluate the impact of feature upsampling on spatial resolution 
 
 <p align="center">
   <img src="images/FeatUp_performance.png" width="700"><br>
-  <em>abdc</em>
+  <em>Results before and after applying FeatUp</em>
 </p>
 
 ### 🔹 Depth-Integrated MaskCut
