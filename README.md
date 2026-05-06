@@ -221,7 +221,7 @@ The experimental results demonstrate the effectiveness of the proposed modificat
 - Challenges remain in cases of heavy occlusion and overlapping objects
 
 <p align="center">
-  <img src="images/Qualitative_Result.png" width="400"><br>
+  <img src="images/Qualitative_Result.png" width="200"><br>
   <em>Qualitative Result</em>
 </p>  
 
