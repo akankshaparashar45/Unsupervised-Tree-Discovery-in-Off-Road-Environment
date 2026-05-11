@@ -139,7 +139,7 @@ repo/
 git clone https://github.com/akankshaparashar45/Unsupervised-Tree-Discovery-in-Off-Road-Environment.git
 cd Unsupervised-Tree-Discovery-in-Off-Road-Environment
 pip install -r requirements.txt
-
+```
 # Usage
 
 This repository contains multiple experimental pipelines for unsupervised object discovery and tree bark localization. Each experiment is organized as a separate module/script.
