@@ -134,9 +134,23 @@ repo/
 ```
     
 # Installation
-asdf
+
+git clone https://github.com/akankshaparashar45/Unsupervised-Tree-Discovery-in-Off-Road-Environment.git
+cd Unsupervised-Tree-Discovery-in-Off-Road-Environment
+pip install -r requirements.txt
+
 # Usage
-asdf
+
+This repository contains multiple experimental pipelines for unsupervised object discovery and tree bark localization. Each experiment is organized as a separate module/script.
+
+All experiment configurations and execution commands are provided as .txt files inside the respective experiment folders.
+
+To run any experiment:
+
+- Navigate to the desired experiment directory
+- Open the corresponding .txt file
+- Execute the commands sequentially
+
 # Experiments
 
 This section evaluates different configurations of the proposed pipeline to analyze their effectiveness in off-road object discovery.
