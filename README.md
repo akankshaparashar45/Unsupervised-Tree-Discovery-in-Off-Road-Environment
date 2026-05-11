@@ -135,6 +135,7 @@ repo/
     
 # Installation
 
+``` bash
 git clone https://github.com/akankshaparashar45/Unsupervised-Tree-Discovery-in-Off-Road-Environment.git
 cd Unsupervised-Tree-Discovery-in-Off-Road-Environment
 pip install -r requirements.txt
