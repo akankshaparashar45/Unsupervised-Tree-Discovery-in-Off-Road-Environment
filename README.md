@@ -83,6 +83,18 @@ The proposed method follows a multi-stage pipeline combining transformer-based f
 - Refine masks using post-processing (if applicable)  
 - Use pseudo-masks for evaluation and downstream tasks  
 
+# External Dependencies
+This project relies on the following external repositories:
+
+- [CutLER](https://github.com/facebookresearch/CutLER)
+- [Detectron2](https://github.com/facebookresearch/detectron2)
+- [FeatUp](https://github.com/mhamilton723/FeatUp)  
+
+These repositories are **not included** in this project due to size constraints.
+
+Please clone and install them by following their official instructions.
+
+
 <!--
 # Repository Structure
 ```bash
@@ -136,11 +148,19 @@ repo/
 -->    
 # Installation
 
+1. Install external dependencies by following the official repositories:
+   - CutLER  
+   - Detectron2  
+   - FeatUp
+   - 
+2. Clone this repository:
 ``` bash
 git clone https://github.com/akankshaparashar45/Unsupervised-Tree-Discovery-in-Off-Road-Environment.git
 cd Unsupervised-Tree-Discovery-in-Off-Road-Environment
-pip install -r requirements.txt
 ```
+
+Note: Dependencies are inherited from the above repositories. No separate requirements file is provided.
+
 # Usage
 
 This repository contains multiple experimental pipelines for unsupervised object discovery and tree bark localization. Each experiment is organized as a separate module/script.
