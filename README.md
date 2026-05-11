@@ -83,6 +83,7 @@ The proposed method follows a multi-stage pipeline combining transformer-based f
 - Refine masks using post-processing (if applicable)  
 - Use pseudo-masks for evaluation and downstream tasks  
 
+<!--
 # Repository Structure
 ```bash
 repo/
@@ -132,7 +133,7 @@ repo/
 └── docs/                    # optional
     └── report.pdf
 ```
-    
+-->    
 # Installation
 
 ``` bash
