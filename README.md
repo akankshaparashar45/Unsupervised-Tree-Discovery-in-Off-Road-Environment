@@ -152,7 +152,7 @@ repo/
    - CutLER  
    - Detectron2  
    - FeatUp
-   - 
+  
 2. Clone this repository:
 ``` bash
 git clone https://github.com/akankshaparashar45/Unsupervised-Tree-Discovery-in-Off-Road-Environment.git
